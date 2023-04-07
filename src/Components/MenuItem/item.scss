@@ -1,0 +1,27 @@
+.item-container{
+    transition: all 1s ease-in-out;
+    .item-box{
+        transition: all 1s ease-in-out !important;
+        .top{
+            img{
+                transition: all 0.4s ease-in-out;
+            }
+        }
+        &:hover{
+            .top{
+                
+                img{
+                    
+                    transform: scale(1.15);
+                }
+            }
+            .bottom{
+                .dsc{
+                    overflow: visible;
+                    height:auto;
+                }
+            }
+            height: max-content;
+        }
+    }
+}

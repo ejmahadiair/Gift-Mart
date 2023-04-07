@@ -1,0 +1,30 @@
+.nav-container{
+    width: 100%;
+    padding: 20px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0,1) 60%, rgba(54, 64, 66,0.6));
+    color: white;
+    .nav-center{
+        .nav-bar{
+            li{
+                a{
+                    &:hover{
+                        color: #ffbe33;
+                    }
+                }
+                .active{
+                    color: #ffbe33;
+                }
+            }
+        }
+    }
+    .nav-right{
+        .item{
+            &:hover{
+                cursor: pointer;
+                color: #ffbe33;
+            }
+        }
+        
+    }
+    
+}

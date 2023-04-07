@@ -1,0 +1,56 @@
+.ej-btn-round {
+  padding: 7px 15px;
+  border-radius: 25px;
+  background-color: #ffbe33;
+  color: white;
+  cursor: pointer;
+}
+.ej-btn-round-active {
+  padding: 7px 15px;
+  border-radius: 25px;
+  background-color: #222831;
+  color: white;
+  cursor: pointer;
+}
+.ej-btn-round:hover {
+  background-color: #e69c00;
+}
+.circle-drop {
+  position: relative;
+}
+.circle-drop:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #ffbe33;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  z-index: -1;
+}
+
+.ej-scroll-none::-webkit-scrollbar {
+  display: none;
+}
+
+.ej-scroll-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.ej-zoomin-show {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  visibility: visible;
+}
+.ej-zoomout-show {
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  visibility: hidden;
+  position: absolute;
+  top: -99999;
+  left: -99999;
+}
